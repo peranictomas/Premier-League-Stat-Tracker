@@ -1,4 +1,4 @@
-﻿
+﻿@using FootballApp.Models
 @{
     ViewBag.Title = "TeamStats";
 }
@@ -11,11 +11,18 @@
     <title>TeamStats</title>
 </head>
 <body>
-    <div>
-        Name :- @Model.team_name<br />
-        Points :- @Model.overall_league_PTS<br />
-        Wins :- @Model.overall_league_W<br />
-        Losses :- @Model.overall_league_L<br />
+    <div style="background:purple" class="jumbotron">
+        <h1 style="color: white" class="text-center">Premier League Tracker</h1>
     </div>
+
+    <div>
+        <h3 class="text-center"> @Model.team_name statistics listed below </h3>
+    </div>
+    <div class="text-center">
+        <h4>Points: @Model.overall_league_PTS</h4>
+        <h4>Wins: @Model.overall_league_W</h4>
+        <h4>Losses: @Model.overall_league_L</h4>
+    </div>
+
 </body>
 </html>
