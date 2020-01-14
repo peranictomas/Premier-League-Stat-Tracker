@@ -1,0 +1,43 @@
+﻿@using FootballApp.Models
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div style="background:purple" class="jumbotron">
+    <h1 style="color: white" class="text-center">Premier League Tracker</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2 class="text-center">Getting started</h2>
+        <p class="text-center">Select a team a view their stats below!</p>
+
+        <form action="TeamStats" method="post">
+            <input type="radio" name="TeamName" value="Liverpool"> Liverpool<br>
+            <input type="radio" name="TeamName" value="Leicester"> Leicester<br>
+            <input type="radio" name="TeamName" value="Manchester City"> Manchester City<br>
+            <input type="radio" name="TeamName" value="Chelsea"> Chelsea<br>
+            <input type="radio" name="TeamName" value="Manchester Utd"> Manchester Utd<br>
+            <input type="radio" name="TeamName" value="Tottenham"> Tottenham<br>
+            <input type="radio" name="TeamName" value="Wolves"> Wolves<br>
+            <input type="radio" name="TeamName" value="Sheffield Utd"> Sheffield Utd<br>
+            <input type="radio" name="TeamName" value="Crystal Palace"> Crystal Palace<br>
+            <input type="radio" name="TeamName" value="Arsenal"> Arsenal<br>
+            <input type="radio" name="TeamName" value="Everton"> Everton<br>
+            <input type="radio" name="TeamName" value="Southampton"> Southampton<br>
+            <input type="radio" name="TeamName" value="Newcastle"> Newcastle<br>
+            <input type="radio" name="TeamName" value="Brighton"> Brighton<br>
+            <input type="radio" name="TeamName" value="Burnley"> Burnley<br>
+            <input type="radio" name="TeamName" value="West Ham"> West Ham<br>
+            <input type="radio" name="TeamName" value="Aston Villa"> Aston Villa<br>
+            <input type="radio" name="TeamName" value="Bournemouth"> Bournemouth<br>
+            <input type="radio" name="TeamName" value="Watford"> Watford<br>
+            <input type="radio" name="TeamName" value="Norwich"> Norwich<br>
+
+            <input id="Submit" name="Submit" type="submit" value="Show Results" />
+        </form>
+
+    </div>
+</div>
+
